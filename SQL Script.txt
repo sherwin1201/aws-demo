@@ -1,0 +1,17 @@
+// Creation 
+CREATE DATABASE IF NOT EXISTS studentdb;
+
+USE studentdb;
+
+CREATE TABLE students (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+// View
+USE studentdb;
+SELECT * FROM students;
