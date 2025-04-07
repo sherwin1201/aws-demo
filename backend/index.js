@@ -15,7 +15,6 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 200,
 			headers: {
-				"Access-Control-Allow-Origin": "*",
 				"Access-Control-Allow-Methods": "POST, OPTIONS",
 				"Access-Control-Allow-Headers": "Content-Type",
 			},
@@ -37,7 +36,6 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 200,
 			headers: {
-				"Access-Control-Allow-Origin": "*",
 				"Access-Control-Allow-Methods": "POST, OPTIONS",
 				"Access-Control-Allow-Headers": "Content-Type",
 				"Content-Type": "application/json",
@@ -49,7 +47,6 @@ exports.handler = async (event) => {
 		return {
 			statusCode: 500,
 			headers: {
-				"Access-Control-Allow-Origin": "*",
 				"Access-Control-Allow-Methods": "POST, OPTIONS",
 				"Access-Control-Allow-Headers": "Content-Type",
 				"Content-Type": "application/json",
